@@ -6,6 +6,9 @@ use App\Http\Controllers\Read;
 use App\Http\Controllers\Update;
 use App\Http\Controllers\Delete;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserCtrl;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +25,6 @@ Route::get('/', function () {
 });
 
 Route::get('/app', [UsersController::class, 'view_form_user']);
+
+Route::get('/products', [ProductController::class, 'index']);
+Route::get('/user', [UserCtrl::class, 'index']);

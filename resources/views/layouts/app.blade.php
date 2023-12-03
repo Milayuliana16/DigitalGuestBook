@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> {{ $nama }}</h1>
-    <h1> @php $nama @endphp</h1>
-    <h1> {{ $nim }}</h1>
-    <h1> @php $nim @endphp</h1>
-    <h1> {{ $prodi }}</h1>
-    <h1> @php $nim @endphp</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@yield('title')</title>
+    </head>
+    <body style="background-color: skyblue;">
+        <header>
+            <!-- Bagian Header Layout -->
+        </header>
 
-</body>
+        <nav>
+            <!-- Bagian Navigasi Layout -->
+        </nav>
+
+        <main>
+            @yield('content')
+        </main>
+
+        <footer>
+            <!-- Bagian Footer Layout -->
+        </footer>
+    </body>
 </html>
