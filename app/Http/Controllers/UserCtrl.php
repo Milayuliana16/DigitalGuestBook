@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\BukuTamu;
 use Illuminate\Http\Request;
 
 class UserCtrl extends Controller
@@ -17,5 +17,12 @@ class UserCtrl extends Controller
             'data' => $data,
             'products' => $products
         ));
+    }
+
+    public function indexuser(){
+        $BukuTamu = BukuTamu::all();
+        $data['title']= 'Dashboard User';
+        $data['posts'] = $BukuTamu;
+        return view('User.Read',$data);
     }
 }

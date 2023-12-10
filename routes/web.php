@@ -20,11 +20,12 @@ use App\Http\Controllers\UserCtrl;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/app', [UsersController::class, 'view_form_user']);
 
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/user', [UserCtrl::class, 'index']);
+Route::get('/', [UserCtrl::class, 'indexuser']);
