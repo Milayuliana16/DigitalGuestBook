@@ -8,6 +8,7 @@ use App\Http\Controllers\Delete;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserCtrl;
+use App\Http\Controllers\MahasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +29,9 @@ Route::get('/app', [UsersController::class, 'view_form_user']);
 
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/user', [UserCtrl::class, 'index']);
-Route::get('/', [UserCtrl::class, 'indexuser']);
+Route::get('/cruduser', [UserCtrl::class, 'indexuser']);
+
+Route::get('/', [MahasiswaController::class, 'index'])->name('mahasiswa.index');;
+Route::get('/create', [MahasiswaController::class, 'create'])->name('mahasiswa.create');
+
+Route::resource('mahasiswa', MahasiswaController::class);
