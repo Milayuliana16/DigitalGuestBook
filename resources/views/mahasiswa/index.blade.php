@@ -49,6 +49,7 @@
                                             <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</button>
                                         </form>
                                     </td>
+                                    
                                 </tbody>
                             @endforeach
                           </table>  

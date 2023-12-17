@@ -18,6 +18,7 @@
                     <h5 class="text-center"><a href="#">By Mila Yuliana ( 20110234 ) </a></h5>         
                     <hr>
                 </div>
+                
                 <div class="container">
                     <h1>Tambah data</h1> 
                     <form action="{{ route('mahasiswa.store') }}" method="POST">
