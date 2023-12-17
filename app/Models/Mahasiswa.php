@@ -11,5 +11,6 @@ class Mahasiswa extends Model
     protected $table = 'mahasiswas';
     public $timestamps = false;
     protected $fillable = ['nama', 'alamat', 'tanggal_lahir'];
+    
 }
 

@@ -39,6 +39,7 @@
                                     <td>{{ $p->notelepon }}</td>
                                     <td>{{ $p->alamat }}</td>
                                     <td>{{ $p->email }}</td>
+                                    
                                 </tbody>
                             @endforeach
                           </table>  
