@@ -66,4 +66,5 @@ class StudentsController extends Controller
             'message' => 'Students berhasil dihapus'
         ], 200);
     }
+    
 }

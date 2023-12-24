@@ -11,4 +11,5 @@ class Students extends Model
     protected $table = 'students';
     public $timestamps = true;
     protected $fillable = ['nama','jurusan','angkatan'];
+    
 }

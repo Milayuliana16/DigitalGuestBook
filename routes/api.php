@@ -25,3 +25,4 @@ Route::get('/students/{id}', [StudentsController::class, 'show']);
 Route::post('/students', [StudentsController::class, 'store']);
 Route::put('/students/{id}', [StudentsController::class, 'update']);
 Route::delete('/students/{id}', [StudentsController::class, 'destroy']);
+
