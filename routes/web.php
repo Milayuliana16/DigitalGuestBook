@@ -31,9 +31,13 @@ Route::get('/products', [ProductController::class, 'index']);
 Route::get('/user', [UserCtrl::class, 'index']);
 Route::get('/cruduser', [UserCtrl::class, 'indexuser']);
 
-Route::get('/', [MahasiswaController::class, 'index'])->name('mahasiswa.index');;
+Route::get('/op', [MahasiswaController::class, 'index'])->name('mahasiswa.index');;
 Route::get('/create', [MahasiswaController::class, 'create'])->name('mahasiswa.create');
 
 Route::resource('mahasiswa', MahasiswaController::class);
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
